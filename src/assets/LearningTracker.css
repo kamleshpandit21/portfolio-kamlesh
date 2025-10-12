@@ -1,0 +1,169 @@
+.learning-tracker {
+  /* background: radial-gradient(circle at top left, #0a0a0f 0%, #000 100%);
+  color: #fff; */
+  padding: 70px 20px;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Analytics === */
+.analytics-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.stat h4 {
+  color: #00d4ff;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.stat p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.progress {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  transition: width 0.4s ease;
+}
+.progress span {
+  position: absolute;
+  right: 10px;
+  top: -25px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+/* === Inputs & Buttons === */
+.neon-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  flex: 1;
+}
+.neon-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn-glow {
+  background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+  cursor: pointer;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid #00d4ff;
+  color: #00d4ff;
+  border-radius: 50px;
+  padding: 8px 18px;
+}
+
+/* === Tech & Topics === */
+.tech-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.tech-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px;
+}
+.icon-btn.danger {
+  color: #ff7b7b;
+}
+
+/* Topics */
+.topic-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 8px 0;
+  padding: 10px 12px;
+}
+.topic-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topic-head label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Subtopics */
+.subtopics {
+  margin-left: 30px;
+  margin-top: 8px;
+}
+.sub-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+
+/* Add forms */
+.add-tech-form,
+.add-sub {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.small input {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}

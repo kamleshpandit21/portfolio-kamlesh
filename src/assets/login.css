@@ -1,0 +1,110 @@
+/* === LOGIN PAGE THEME === */
+.login-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* ✅ Removed any background color */
+}
+
+/* Floating glowing blobs */
+.login-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5px);
+  opacity: 0.3;
+  animation: floatGlow 8s ease-in-out infinite alternate;
+}
+
+.glow1 {
+  width: 300px;
+  height: 300px;
+  background: #00d4ff;
+  top: 10%;
+  left: 5%;
+}
+
+.glow2 {
+  width: 400px;
+  height: 400px;
+  background: #8a2be2;
+  bottom: 15%;
+  right: 10%;
+}
+
+.glow3 {
+  width: 250px;
+  height: 250px;
+  background: #00ff9d;
+  top: 50%;
+  left: 40%;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 212, 255, 0.15);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 0 45px rgba(0, 212, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Inputs */
+.neon-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff !important;
+  border-radius: 12px;
+  padding: 12px 14px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.neon-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.neon-input:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 12px #00d4ff;
+}
+
+/* Buttons */
+.btn-glow {
+  background: linear-gradient(90deg, #00d4ff, #8a2be2);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+  transform: scale(1.03);
+}
